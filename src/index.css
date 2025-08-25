@@ -208,4 +208,9 @@ All colors MUST be HSL. Cosmic theme with deep purples, midnight blues, and cosm
       box-shadow: 0 0 40px hsl(47 84% 68% / 0.6);
     }
   }
+
+  /* Radial Gradient */
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
 }

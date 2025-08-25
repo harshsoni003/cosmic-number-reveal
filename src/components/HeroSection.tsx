@@ -52,16 +52,29 @@ export const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right Logo Display */}
+          {/* Right Logo Display with Sun Animation */}
           <div className="hidden lg:flex justify-center items-center">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-8 shadow-cosmic hover:shadow-glow transition-all duration-500 hover:scale-105">
+              {/* Animated Sun Background */}
+              <div className="absolute inset-0 w-80 h-80 rounded-full">
+                {/* Sun rays */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 animate-spin" style={{ animationDuration: '20s' }} />
+                <div className="absolute inset-4 rounded-full bg-gradient-to-l from-accent/25 via-primary/15 to-accent/25 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }} />
+                <div className="absolute inset-8 rounded-full bg-gradient-to-r from-primary/20 via-accent/30 to-primary/20 animate-spin" style={{ animationDuration: '25s' }} />
+                
+                {/* Sun glow */}
+                <div className="absolute inset-12 rounded-full bg-gradient-radial from-primary/40 via-accent/20 to-transparent" />
+              </div>
+              
+              {/* Logo Container */}
+              <div className="relative w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-8 shadow-cosmic hover:shadow-glow transition-all duration-500 hover:scale-105 backdrop-blur-sm">
                 <img 
                   src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
                   alt="Mysttic Numbers Sacred Geometry"
                   className="w-full h-full object-contain float"
                 />
               </div>
+              
               {/* Orbital rings around logo */}
               <div className="absolute inset-0 rounded-full border border-primary/30" />
               <div className="absolute inset-4 rounded-full border border-accent/20" />
