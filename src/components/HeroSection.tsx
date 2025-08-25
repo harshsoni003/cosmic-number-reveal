@@ -18,26 +18,54 @@ export const HeroSection = () => {
       <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-primary rounded-full blur-sm opacity-70 float" style={{ animationDelay: '4s' }} />
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="font-cosmic text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary animate-fade-in">
-            Unlock the Power of Your Numbers
-            <span className="inline-block ml-3">
-              <Sparkles className="w-12 h-12 text-primary animate-pulse" />
-            </span>
-          </h1>
+      <div className="relative z-10 container mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
+          {/* Left Content */}
+          <div className="text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start mb-8">
+              <div className="w-20 h-20 rounded-full overflow-hidden bg-primary/10 p-2 shadow-glow">
+                <img 
+                  src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
+                  alt="Mysttic Numbers Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+            <h1 className="font-cosmic text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary animate-fade-in">
+              Unlock the Power of Your Numbers
+              <span className="inline-block ml-3">
+                <Sparkles className="w-12 h-12 text-primary animate-pulse" />
+              </span>
+            </h1>
+            
+            <p className="font-mystical text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+              Discover your Life Path, Destiny, and Personality with Professional Numerology Readings
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+              <Button variant="hero" size="lg" className="px-8 py-4">
+                Get My Reading ✨
+              </Button>
+              <Button variant="outline" size="lg" className="px-8 py-4">
+                Learn More
+              </Button>
+            </div>
+          </div>
           
-          <p className="font-mystical text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-            Discover your Life Path, Destiny, and Personality with Professional Numerology Readings
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="hero" size="lg" className="px-8 py-4">
-              Get My Reading ✨
-            </Button>
-            <Button variant="outline" size="lg" className="px-8 py-4">
-              Learn More
-            </Button>
+          {/* Right Logo Display */}
+          <div className="hidden lg:flex justify-center items-center">
+            <div className="relative">
+              <div className="w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-8 shadow-cosmic hover:shadow-glow transition-all duration-500 hover:scale-105">
+                <img 
+                  src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
+                  alt="Mysttic Numbers Sacred Geometry"
+                  className="w-full h-full object-contain float"
+                />
+              </div>
+              {/* Orbital rings around logo */}
+              <div className="absolute inset-0 rounded-full border border-primary/30 animate-pulse" style={{ animationDelay: '0s' }} />
+              <div className="absolute inset-4 rounded-full border border-accent/20 animate-pulse" style={{ animationDelay: '1s' }} />
+            </div>
           </div>
         </div>
       </div>

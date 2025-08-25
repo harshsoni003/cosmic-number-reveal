@@ -74,23 +74,32 @@ export const ChatBot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-80 h-96 bg-card-cosmic rounded-2xl shadow-cosmic border border-border z-40 overflow-hidden">
-          {/* Header */}
-          <div className="bg-primary text-primary-foreground p-4 flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <Sparkles className="w-5 h-5" />
-              <span className="font-cosmic font-semibold">Mysttic Assistant</span>
+        <div className="fixed bottom-24 right-6 w-96 h-[500px] bg-card-cosmic rounded-2xl shadow-cosmic border border-border z-40 overflow-hidden backdrop-blur-xl">
+          {/* Professional Header */}
+          <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground p-4">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full overflow-hidden bg-background/20 p-1">
+                <img 
+                  src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
+                  alt="Mysttic Numbers Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <h3 className="font-cosmic font-semibold text-lg">Mysttic Numbers</h3>
+                <p className="font-mystical text-xs opacity-90">Professional Numerology Assistant</p>
+              </div>
             </div>
           </div>
 
-          {/* Content */}
-          <div className="h-full pb-16 overflow-hidden">
+          {/* Professional Content */}
+          <div className="h-full pb-20 overflow-hidden bg-background/5">
             {!selectedMessage ? (
               /* Questions List */
-              <div className="p-4 space-y-3 h-full overflow-y-auto">
-                <div className="text-center mb-4">
-                  <p className="font-mystical text-sm text-muted-foreground">
-                    Choose a question to get instant answers ✨
+              <div className="p-5 space-y-3 h-full overflow-y-auto">
+                <div className="text-center mb-6">
+                  <p className="font-mystical text-sm text-muted-foreground leading-relaxed">
+                    Select a topic below for instant expert guidance
                   </p>
                 </div>
                 
@@ -98,41 +107,50 @@ export const ChatBot = () => {
                   <button
                     key={question.id}
                     onClick={() => handleQuestionClick(question)}
-                    className="w-full p-3 bg-glow rounded-lg text-left hover:scale-105 transition-all duration-300 hover:shadow-mystical group"
+                    className="w-full p-4 bg-card rounded-xl text-left hover:scale-[1.02] transition-all duration-300 hover:shadow-mystical group border border-border/30 hover:border-primary/30"
                   >
-                    <div className="flex items-center space-x-3">
-                      <div className="text-primary group-hover:text-accent transition-colors">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center text-primary group-hover:text-accent transition-colors">
                         {question.icon}
                       </div>
-                      <span className="font-mystical text-sm text-foreground group-hover:text-primary transition-colors">
-                        {question.question}
-                      </span>
+                      <div className="flex-1">
+                        <span className="font-mystical font-medium text-foreground group-hover:text-primary transition-colors block">
+                          {question.question}
+                        </span>
+                        <span className="font-mystical text-xs text-muted-foreground">
+                          Tap for detailed information
+                        </span>
+                      </div>
                     </div>
                   </button>
                 ))}
                 
-                <div className="text-center pt-4 border-t border-border/30">
-                  <p className="font-mystical text-xs text-muted-foreground">
-                    Need more help? Contact us directly!
+                <div className="text-center pt-6 border-t border-border/30">
+                  <p className="font-mystical text-xs text-muted-foreground mb-3">
+                    Professional numerology guidance available 24/7
                   </p>
+                  <Button variant="outline" size="sm" className="text-xs">
+                    <Mail className="w-3 h-3 mr-2" />
+                    Schedule Consultation
+                  </Button>
                 </div>
               </div>
             ) : (
-              /* Answer Display */
-              <div className="p-4 h-full flex flex-col">
+              /* Professional Answer Display */
+              <div className="p-5 h-full flex flex-col">
                 <button
                   onClick={goBack}
-                  className="flex items-center space-x-2 text-primary hover:text-accent transition-colors mb-4 text-sm font-mystical"
+                  className="flex items-center space-x-2 text-primary hover:text-accent transition-colors mb-6 text-sm font-mystical font-medium"
                 >
-                  <span>← Back to questions</span>
+                  <span>← Back to topics</span>
                 </button>
                 
-                <div className="bg-glow rounded-lg p-4 flex-1">
-                  <div className="flex items-center space-x-2 mb-3">
-                    <div className="text-primary">
+                <div className="bg-card rounded-xl p-5 flex-1 border border-border/30">
+                  <div className="flex items-center space-x-3 mb-4 pb-3 border-b border-border/20">
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center text-primary">
                       {selectedMessage.icon}
                     </div>
-                    <h3 className="font-cosmic font-semibold text-foreground">
+                    <h3 className="font-cosmic font-semibold text-foreground text-lg">
                       {selectedMessage.question}
                     </h3>
                   </div>
@@ -142,10 +160,13 @@ export const ChatBot = () => {
                   </div>
                 </div>
                 
-                <div className="mt-4 text-center">
-                  <Button variant="cosmic" size="sm" className="text-xs">
+                <div className="mt-5 flex gap-3">
+                  <Button variant="cosmic" size="sm" className="flex-1 text-xs">
                     <Mail className="w-3 h-3 mr-1" />
-                    Contact for More Info
+                    Get Personal Reading
+                  </Button>
+                  <Button variant="outline" size="sm" className="text-xs">
+                    Share
                   </Button>
                 </div>
               </div>
