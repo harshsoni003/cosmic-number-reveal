@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
-import cosmicHeroBg from "@/assets/cosmic-hero-bg.jpg";
+import simpleHeroBg from "@/assets/simple-hero-bg.jpg";
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center cosmic-stars overflow-hidden">
-      {/* Cosmic Background */}
+      {/* Simple Elegant Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
-        style={{ backgroundImage: `url(${cosmicHeroBg})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+        style={{ backgroundImage: `url(${simpleHeroBg})` }}
       />
       <div className="absolute inset-0 bg-hero" />
       
