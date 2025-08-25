@@ -75,8 +75,8 @@ export const FeaturesSection = () => {
       </div>
       
       {/* Background Elements */}
-      <div className="absolute top-10 left-10 w-16 h-16 bg-primary/10 rounded-full blur-xl animate-pulse" />
-      <div className="absolute bottom-20 right-20 w-20 h-20 bg-accent/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-10 left-10 w-16 h-16 bg-primary/10 rounded-full blur-xl" />
+      <div className="absolute bottom-20 right-20 w-20 h-20 bg-accent/10 rounded-full blur-xl" />
     </section>
   );
 };

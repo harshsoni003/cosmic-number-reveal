@@ -39,8 +39,8 @@ export const Footer = () => {
       </div>
       
       {/* Floating cosmic elements */}
-      <div className="absolute bottom-0 left-1/4 w-16 h-16 bg-primary/10 rounded-full blur-xl animate-pulse" />
-      <div className="absolute bottom-0 right-1/4 w-12 h-12 bg-accent/10 rounded-full blur-xl animate-pulse" style={{ animationDelay: '2s' }} />
+      <div className="absolute bottom-0 left-1/4 w-16 h-16 bg-primary/10 rounded-full blur-xl" />
+      <div className="absolute bottom-0 right-1/4 w-12 h-12 bg-accent/10 rounded-full blur-xl" />
     </footer>
   );
 };

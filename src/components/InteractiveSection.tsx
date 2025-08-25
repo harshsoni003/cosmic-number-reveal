@@ -85,21 +85,21 @@ export const InteractiveSection = () => {
                 
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="text-center p-4 bg-glow rounded-xl">
-                    <div className="text-3xl font-cosmic font-bold text-primary mb-2 pulse-glow">
+                    <div className="text-3xl font-cosmic font-bold text-primary mb-2">
                       {results.lifePath}
                     </div>
                     <div className="font-mystical text-sm text-muted-foreground">Life Path</div>
                   </div>
                   
                   <div className="text-center p-4 bg-glow rounded-xl">
-                    <div className="text-3xl font-cosmic font-bold text-accent mb-2 pulse-glow" style={{ animationDelay: '0.5s' }}>
+                    <div className="text-3xl font-cosmic font-bold text-accent mb-2">
                       {results.destiny}
                     </div>
                     <div className="font-mystical text-sm text-muted-foreground">Destiny</div>
                   </div>
                   
                   <div className="text-center p-4 bg-glow rounded-xl">
-                    <div className="text-3xl font-cosmic font-bold text-secondary mb-2 pulse-glow" style={{ animationDelay: '1s' }}>
+                    <div className="text-3xl font-cosmic font-bold text-secondary mb-2">
                       {results.personality}
                     </div>
                     <div className="font-mystical text-sm text-muted-foreground">Personality</div>

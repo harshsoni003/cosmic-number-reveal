@@ -66,15 +66,15 @@ export const TestimonialsSection = () => {
               </div>
               
               {/* Floating sparkle */}
-              <div className="absolute top-4 right-4 w-2 h-2 bg-primary rounded-full opacity-60 animate-pulse" />
+              <div className="absolute top-4 right-4 w-2 h-2 bg-primary rounded-full opacity-60" />
             </div>
           ))}
         </div>
       </div>
       
       {/* Background cosmic elements */}
-      <div className="absolute top-1/3 left-1/4 w-32 h-32 bg-primary/5 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/3 w-24 h-24 bg-accent/5 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/3 left-1/4 w-32 h-32 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 right-1/3 w-24 h-24 bg-accent/5 rounded-full blur-2xl" />
     </section>
   );
 };

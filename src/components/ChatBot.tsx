@@ -62,7 +62,7 @@ export const ChatBot = () => {
           onClick={() => setIsOpen(!isOpen)}
           variant="hero"
           size="lg"
-          className="rounded-full w-16 h-16 shadow-cosmic hover:shadow-glow pulse-glow"
+          className="rounded-full w-16 h-16 shadow-cosmic hover:shadow-glow"
         >
           {isOpen ? (
             <X className="w-6 h-6" />

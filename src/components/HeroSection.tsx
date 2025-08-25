@@ -34,7 +34,7 @@ export const HeroSection = () => {
             <h1 className="font-cosmic text-5xl md:text-7xl font-bold mb-6 text-foreground animate-fade-in">
               Unlock the Power of Your Numbers
               <span className="inline-block ml-3">
-                <Sparkles className="w-12 h-12 text-primary animate-pulse" />
+                <Sparkles className="w-12 h-12 text-primary" />
               </span>
             </h1>
             
@@ -63,16 +63,16 @@ export const HeroSection = () => {
                 />
               </div>
               {/* Orbital rings around logo */}
-              <div className="absolute inset-0 rounded-full border border-primary/30 animate-pulse" style={{ animationDelay: '0s' }} />
-              <div className="absolute inset-4 rounded-full border border-accent/20 animate-pulse" style={{ animationDelay: '1s' }} />
+              <div className="absolute inset-0 rounded-full border border-primary/30" />
+              <div className="absolute inset-4 rounded-full border border-accent/20" />
             </div>
           </div>
         </div>
       </div>
       
       {/* Animated Orbs */}
-      <div className="absolute bottom-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-pulse" />
-      <div className="absolute top-32 right-20 w-24 h-24 bg-accent/20 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }} />
+      <div className="absolute bottom-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-xl" />
+      <div className="absolute top-32 right-20 w-24 h-24 bg-accent/20 rounded-full blur-xl" />
     </section>
   );
 };
