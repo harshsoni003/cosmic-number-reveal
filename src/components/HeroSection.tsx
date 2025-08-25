@@ -1,41 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
-import cosmicHeroMain from "@/assets/cosmic-hero-main.jpg";
+import simpleHeroBg from "@/assets/simple-hero-bg.jpg";
 
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center cosmic-stars overflow-hidden">
-      {/* Epic Cosmic Background */}
+      {/* Simple Elegant Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${cosmicHeroMain})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+        style={{ backgroundImage: `url(${simpleHeroBg})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/10 to-background/30" />
+      <div className="absolute inset-0 bg-hero" />
       
-      {/* Mystical Energy Overlays */}
-      <div className="absolute inset-0">
-        {/* Flowing energy patterns */}
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-spin" style={{ animationDuration: '30s' }} />
-        <div className="absolute top-1/3 right-1/3 w-48 h-48 bg-accent/15 rounded-full blur-2xl animate-spin" style={{ animationDuration: '25s', animationDirection: 'reverse' }} />
-        <div className="absolute bottom-1/3 left-1/3 w-56 h-56 bg-secondary/8 rounded-full blur-3xl animate-spin" style={{ animationDuration: '35s' }} />
-      </div>
+      {/* Floating Elements */}
+      <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-primary rounded-full blur-sm opacity-80 float" style={{ animationDelay: '0s' }} />
+      <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-accent rounded-full blur-sm opacity-60 float" style={{ animationDelay: '2s' }} />
+      <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-primary rounded-full blur-sm opacity-70 float" style={{ animationDelay: '4s' }} />
       
-      {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          
-          {/* Logo with Cosmic Aura */}
-          <div className="flex justify-center mb-12">
-            <div className="relative">
-              {/* Cosmic Aura Background */}
-              <div className="absolute inset-0 w-32 h-32 rounded-full">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/40 via-accent/30 to-primary/40 animate-spin" style={{ animationDuration: '20s' }} />
-                <div className="absolute inset-2 rounded-full bg-gradient-to-l from-accent/35 via-primary/25 to-accent/35 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }} />
-                <div className="absolute inset-4 rounded-full bg-gradient-to-r from-primary/30 via-accent/40 to-primary/30 animate-spin" style={{ animationDuration: '25s' }} />
-              </div>
-              
-              {/* Logo Container */}
-              <div className="relative w-32 h-32 rounded-full overflow-hidden bg-primary/20 p-4 shadow-cosmic backdrop-blur-sm">
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
+          {/* Left Content */}
+          <div className="text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start mb-8">
+              <div className="w-20 h-20 rounded-full overflow-hidden bg-primary/10 p-2 shadow-glow">
                 <img 
                   src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
                   alt="Mysttic Numbers Logo"
@@ -43,63 +31,61 @@ export const HeroSection = () => {
                 />
               </div>
             </div>
-          </div>
-
-          {/* Main Heading */}
-          <h1 className="font-cosmic text-5xl md:text-7xl lg:text-8xl font-bold mb-8 text-foreground leading-tight">
-            Illuminate Your Path with
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary mt-2">
-              MYSTTIC NUMBERS
-            </span>
-          </h1>
-          
-          {/* Subtitle */}
-          <p className="font-mystical text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
-            Experience the power of ancient numerology and unlock your full spiritual potential through cosmic number wisdom
-          </p>
-          
-          {/* Call to Action Button */}
-          <div className="flex justify-center mb-16">
-            <Button 
-              variant="hero" 
-              size="lg" 
-              className="px-12 py-6 text-xl font-bold bg-primary hover:bg-primary/90 text-primary-foreground shadow-cosmic hover:shadow-glow transform hover:scale-105 transition-all duration-300"
-            >
-              GET STARTED
-            </Button>
+            <h1 className="font-cosmic text-5xl md:text-7xl font-bold mb-6 text-foreground animate-fade-in">
+              Unlock the Power of Your Numbers
+              <span className="inline-block ml-3">
+                <Sparkles className="w-12 h-12 text-primary" />
+              </span>
+            </h1>
+            
+            <p className="font-mystical text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+              Discover your Life Path, Destiny, and Personality with Professional Numerology Readings
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+              <Button variant="hero" size="lg" className="px-8 py-4">
+                Get My Reading ✨
+              </Button>
+              <Button variant="outline" size="lg" className="px-8 py-4">
+                Learn More
+              </Button>
+            </div>
           </div>
           
-          {/* Mystical Energy Indicators */}
-          <div className="flex justify-center space-x-8 opacity-60">
-            <div className="flex flex-col items-center">
-              <div className="w-12 h-12 rounded-full bg-primary/30 flex items-center justify-center mb-2">
-                <Sparkles className="w-6 h-6 text-primary" />
+          {/* Right Logo Display with Sun Animation */}
+          <div className="hidden lg:flex justify-center items-center">
+            <div className="relative">
+              {/* Animated Sun Background */}
+              <div className="absolute inset-0 w-80 h-80 rounded-full">
+                {/* Sun rays */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 animate-spin" style={{ animationDuration: '20s' }} />
+                <div className="absolute inset-4 rounded-full bg-gradient-to-l from-accent/25 via-primary/15 to-accent/25 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }} />
+                <div className="absolute inset-8 rounded-full bg-gradient-to-r from-primary/20 via-accent/30 to-primary/20 animate-spin" style={{ animationDuration: '25s' }} />
+                
+                {/* Sun glow */}
+                <div className="absolute inset-12 rounded-full bg-gradient-radial from-primary/40 via-accent/20 to-transparent" />
               </div>
-              <span className="font-mystical text-sm text-muted-foreground">Life Path</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center mb-2">
-                <Sparkles className="w-6 h-6 text-accent" />
+              
+              {/* Logo Container */}
+              <div className="relative w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-8 shadow-cosmic hover:shadow-glow transition-all duration-500 hover:scale-105 backdrop-blur-sm">
+                <img 
+                  src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
+                  alt="Mysttic Numbers Sacred Geometry"
+                  className="w-full h-full object-contain float"
+                />
               </div>
-              <span className="font-mystical text-sm text-muted-foreground">Destiny</span>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-12 h-12 rounded-full bg-secondary/30 flex items-center justify-center mb-2">
-                <Sparkles className="w-6 h-6 text-secondary" />
-              </div>
-              <span className="font-mystical text-sm text-muted-foreground">Purpose</span>
+              
+              {/* Orbital rings around logo */}
+              <div className="absolute inset-0 rounded-full border border-primary/30" />
+              <div className="absolute inset-4 rounded-full border border-accent/20" />
             </div>
           </div>
         </div>
       </div>
       
-      {/* Cosmic Wave Pattern at Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent">
-        <svg className="absolute bottom-0 w-full h-24" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,120 C150,80 350,40 600,60 C850,80 1050,120 1200,100 L1200,120 Z" fill="hsl(var(--background))" fillOpacity="0.8"/>
-          <path d="M0,120 C200,60 400,80 600,70 C800,60 1000,90 1200,80 L1200,120 Z" fill="hsl(var(--background))" fillOpacity="0.6"/>
-        </svg>
-      </div>
+      {/* Animated Orbs */}
+      <div className="absolute bottom-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-xl" />
+      <div className="absolute top-32 right-20 w-24 h-24 bg-accent/20 rounded-full blur-xl" />
     </section>
   );
 };
