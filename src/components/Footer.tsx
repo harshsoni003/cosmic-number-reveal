@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="text-center">
           <div className="flex items-center justify-center mb-6">
             <Sparkles className="w-8 h-8 text-primary mr-3" />
-            <h3 className="font-cosmic text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+            <h3 className="font-cosmic text-2xl font-bold text-foreground">
               Mysttic Numbers
             </h3>
             <Sparkles className="w-8 h-8 text-primary ml-3" />

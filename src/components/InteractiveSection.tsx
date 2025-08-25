@@ -30,7 +30,7 @@ export const InteractiveSection = () => {
       
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-cosmic text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">
+          <h2 className="font-cosmic text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Calculate Your Numbers
           </h2>
           <p className="font-mystical text-xl text-muted-foreground max-w-2xl mx-auto">

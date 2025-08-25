@@ -31,7 +31,7 @@ export const HeroSection = () => {
                 />
               </div>
             </div>
-            <h1 className="font-cosmic text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary animate-fade-in">
+            <h1 className="font-cosmic text-5xl md:text-7xl font-bold mb-6 text-foreground animate-fade-in">
               Unlock the Power of Your Numbers
               <span className="inline-block ml-3">
                 <Sparkles className="w-12 h-12 text-primary animate-pulse" />

@@ -29,7 +29,7 @@ export const FeaturesSection = () => {
     <section className="py-20 px-6 relative cosmic-stars">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-cosmic text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+          <h2 className="font-cosmic text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Your Cosmic Numbers Revealed
           </h2>
           <p className="font-mystical text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -56,8 +56,7 @@ export const FeaturesSection = () => {
                      style={{ background: `linear-gradient(135deg, var(--primary), var(--accent))` }} />
               </div>
               
-              <h3 className="font-cosmic text-2xl font-semibold mb-4 text-center bg-gradient-to-r text-transparent bg-clip-text" 
-                  style={{ background: `linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)))` }}>
+              <h3 className="font-cosmic text-2xl font-semibold mb-4 text-center text-foreground">
                 {feature.title}
               </h3>
               

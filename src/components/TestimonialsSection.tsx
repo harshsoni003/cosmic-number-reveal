@@ -26,7 +26,7 @@ export const TestimonialsSection = () => {
     <section className="py-20 px-6 relative cosmic-stars">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-cosmic text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
+          <h2 className="font-cosmic text-4xl md:text-5xl font-bold mb-6 text-foreground">
             Cosmic Testimonials
           </h2>
           <p className="font-mystical text-xl text-muted-foreground max-w-2xl mx-auto">
