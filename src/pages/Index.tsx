@@ -3,6 +3,7 @@ import { FeaturesSection } from "@/components/FeaturesSection";
 import { InteractiveSection } from "@/components/InteractiveSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { Footer } from "@/components/Footer";
+import { ChatBot } from "@/components/ChatBot";
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <InteractiveSection />
       <TestimonialsSection />
       <Footer />
+      <ChatBot />
     </div>
   );
 };
