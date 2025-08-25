@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				cosmic: ['Cinzel', 'serif'],
+				mystical: ['Poppins', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -62,6 +66,17 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'cosmic': 'var(--gradient-cosmic)',
+				'hero': 'var(--gradient-hero)',
+				'card-cosmic': 'var(--gradient-card)',
+				'glow': 'var(--gradient-glow)',
+			},
+			boxShadow: {
+				'cosmic': 'var(--shadow-cosmic)',
+				'glow': 'var(--shadow-glow)',
+				'mystical': 'var(--shadow-mystical)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

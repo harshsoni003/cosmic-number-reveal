@@ -1,0 +1,122 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Calculator, Sparkles } from "lucide-react";
+
+export const InteractiveSection = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    birthDate: ""
+  });
+  const [results, setResults] = useState<any>(null);
+
+  const calculateNumbers = () => {
+    // Placeholder calculation - replace with actual numerology logic later
+    const lifePathNumber = Math.floor(Math.random() * 9) + 1;
+    const destinyNumber = Math.floor(Math.random() * 9) + 1;
+    const personalityNumber = Math.floor(Math.random() * 9) + 1;
+    
+    setResults({
+      lifePath: lifePathNumber,
+      destiny: destinyNumber,
+      personality: personalityNumber
+    });
+  };
+
+  return (
+    <section className="py-20 px-6 relative">
+      <div className="absolute inset-0 bg-cosmic opacity-20" />
+      <div className="absolute inset-0 cosmic-stars" />
+      
+      <div className="container mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <h2 className="font-cosmic text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary">
+            Calculate Your Numbers
+          </h2>
+          <p className="font-mystical text-xl text-muted-foreground max-w-2xl mx-auto">
+            Enter your information to discover your personal numerology profile
+          </p>
+        </div>
+        
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-card-cosmic rounded-2xl p-8 shadow-cosmic">
+            <div className="space-y-6">
+              <div>
+                <label className="font-mystical text-sm font-medium text-foreground mb-2 block">
+                  Full Name
+                </label>
+                <Input
+                  placeholder="Enter your full legal name"
+                  value={formData.fullName}
+                  onChange={(e) => setFormData({...formData, fullName: e.target.value})}
+                  className="text-lg"
+                />
+              </div>
+              
+              <div>
+                <label className="font-mystical text-sm font-medium text-foreground mb-2 block">
+                  Date of Birth
+                </label>
+                <Input
+                  type="date"
+                  value={formData.birthDate}
+                  onChange={(e) => setFormData({...formData, birthDate: e.target.value})}
+                  className="text-lg"
+                />
+              </div>
+              
+              <Button 
+                onClick={calculateNumbers}
+                variant="hero" 
+                size="lg" 
+                className="w-full text-lg py-4"
+                disabled={!formData.fullName || !formData.birthDate}
+              >
+                <Calculator className="w-5 h-5 mr-2" />
+                Reveal My Numbers
+              </Button>
+            </div>
+            
+            {results && (
+              <div className="mt-8 pt-8 border-t border-border">
+                <h3 className="font-cosmic text-2xl font-semibold text-center mb-6 text-primary">
+                  Your Cosmic Profile ✨
+                </h3>
+                
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="text-center p-4 bg-glow rounded-xl">
+                    <div className="text-3xl font-cosmic font-bold text-primary mb-2 pulse-glow">
+                      {results.lifePath}
+                    </div>
+                    <div className="font-mystical text-sm text-muted-foreground">Life Path</div>
+                  </div>
+                  
+                  <div className="text-center p-4 bg-glow rounded-xl">
+                    <div className="text-3xl font-cosmic font-bold text-accent mb-2 pulse-glow" style={{ animationDelay: '0.5s' }}>
+                      {results.destiny}
+                    </div>
+                    <div className="font-mystical text-sm text-muted-foreground">Destiny</div>
+                  </div>
+                  
+                  <div className="text-center p-4 bg-glow rounded-xl">
+                    <div className="text-3xl font-cosmic font-bold text-secondary mb-2 pulse-glow" style={{ animationDelay: '1s' }}>
+                      {results.personality}
+                    </div>
+                    <div className="font-mystical text-sm text-muted-foreground">Personality</div>
+                  </div>
+                </div>
+                
+                <div className="text-center mt-6">
+                  <Button variant="cosmic">
+                    <Sparkles className="w-4 h-4 mr-2" />
+                    Get Full Reading
+                  </Button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
