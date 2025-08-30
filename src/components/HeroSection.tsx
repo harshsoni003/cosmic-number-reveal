@@ -7,7 +7,7 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center cosmic-stars overflow-hidden">
       {/* Video Background */}
       <video 
-        className="absolute inset-0 w-full h-full object-cover opacity-60"
+        className="absolute inset-0 w-full h-full object-cover opacity-90"
         autoPlay
         muted
         loop
@@ -15,7 +15,7 @@ export const HeroSection = () => {
       >
         <source src="https://res.cloudinary.com/dhea2aqxb/video/upload/1111_eu935d.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-hero" />
+      <div className="absolute inset-0 bg-black/30" />
       
       {/* Floating Elements */}
       <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-primary rounded-full blur-sm opacity-80 float" style={{ animationDelay: '0s' }} />
