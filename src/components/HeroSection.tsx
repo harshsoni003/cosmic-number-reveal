@@ -24,9 +24,9 @@ export const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6">
-        <div className="flex flex-col items-center justify-center min-h-screen pt-20">
+        <div className="flex flex-col items-center justify-center min-h-screen pt-10">
           {/* Logo at top with glow effect */}
-          <div className="flex items-center justify-center mb-16">
+          <div className="flex items-center justify-center mb-20">
             <div className="relative">
               <div className="absolute inset-0 w-40 h-40 rounded-full bg-primary/30 blur-xl animate-pulse"></div>
               <div className="relative w-40 h-40 rounded-full overflow-hidden bg-primary/10 p-3 shadow-glow border border-primary/20">
@@ -40,9 +40,11 @@ export const HeroSection = () => {
           </div>
           
           {/* Centered Content */}
-          <div className="text-center max-w-4xl">
-            <h1 className="font-cosmic text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 text-foreground animate-fade-in leading-tight">
-              <span className="whitespace-nowrap">LLLUMINATE YOUR PATH WITH</span>
+          <div className="text-center max-w-5xl mx-auto">
+            <h1 className="font-cosmic text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 text-foreground animate-fade-in leading-tight text-center">
+              <div className="flex justify-center">
+                <span className="whitespace-nowrap">LLLUMINATE YOUR PATH WITH</span>
+              </div>
               <br />
               <span className="text-primary">MYSTTIC FLAME</span>
               <span className="inline-block ml-3">
