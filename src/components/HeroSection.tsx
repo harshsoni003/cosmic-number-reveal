@@ -5,11 +5,16 @@ import simpleHeroBg from "@/assets/simple-hero-bg.jpg";
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center cosmic-stars overflow-hidden">
-      {/* Simple Elegant Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
-        style={{ backgroundImage: `url(${simpleHeroBg})` }}
-      />
+      {/* Video Background */}
+      <video 
+        className="absolute inset-0 w-full h-full object-cover opacity-60"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source src="https://res.cloudinary.com/dhea2aqxb/video/upload/1111_eu935d.mp4" type="video/mp4" />
+      </video>
       <div className="absolute inset-0 bg-hero" />
       
       {/* Floating Elements */}
