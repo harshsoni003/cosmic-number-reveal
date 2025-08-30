@@ -28,7 +28,7 @@ export const HeroSection = () => {
           {/* Centered Content */}
           <div className="text-center">
             <div className="flex items-center justify-center mb-8">
-              <div className="w-20 h-20 rounded-full overflow-hidden bg-primary/10 p-2 shadow-glow">
+              <div className="w-32 h-32 rounded-full overflow-hidden bg-primary/10 p-2 shadow-glow">
                 <img 
                   src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
                   alt="Mysttic Numbers Logo"
@@ -37,14 +37,14 @@ export const HeroSection = () => {
               </div>
             </div>
             <h1 className="font-cosmic text-5xl md:text-7xl font-bold mb-6 text-foreground animate-fade-in">
-              Unlock the Power of Your Numbers
+              llluminate Your Path with MYSTTIC FLAME
               <span className="inline-block ml-3">
                 <Sparkles className="w-12 h-12 text-primary" />
               </span>
             </h1>
             
             <p className="font-mystical text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              Discover your Life Path, Destiny, and Personality with Professional Numerology Readings
+              Experience the power of intuitive guidance and unlock your full potential
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
