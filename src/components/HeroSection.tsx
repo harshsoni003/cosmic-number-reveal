@@ -24,10 +24,10 @@ export const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-screen">
-          {/* Left Content */}
-          <div className="text-center lg:text-left">
-            <div className="flex items-center justify-center lg:justify-start mb-8">
+        <div className="flex items-center justify-center min-h-screen">
+          {/* Centered Content */}
+          <div className="text-center">
+            <div className="flex items-center justify-center mb-8">
               <div className="w-20 h-20 rounded-full overflow-hidden bg-primary/10 p-2 shadow-glow">
                 <img 
                   src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
@@ -47,42 +47,13 @@ export const HeroSection = () => {
               Discover your Life Path, Destiny, and Personality with Professional Numerology Readings
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button variant="hero" size="lg" className="px-8 py-4">
                 Get My Reading ✨
               </Button>
               <Button variant="outline" size="lg" className="px-8 py-4">
                 Learn More
               </Button>
-            </div>
-          </div>
-          
-          {/* Right Logo Display with Sun Animation */}
-          <div className="hidden lg:flex justify-center items-center">
-            <div className="relative">
-              {/* Animated Sun Background */}
-              <div className="absolute inset-0 w-80 h-80 rounded-full">
-                {/* Sun rays */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/30 via-accent/20 to-primary/30 animate-spin" style={{ animationDuration: '20s' }} />
-                <div className="absolute inset-4 rounded-full bg-gradient-to-l from-accent/25 via-primary/15 to-accent/25 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }} />
-                <div className="absolute inset-8 rounded-full bg-gradient-to-r from-primary/20 via-accent/30 to-primary/20 animate-spin" style={{ animationDuration: '25s' }} />
-                
-                {/* Sun glow */}
-                <div className="absolute inset-12 rounded-full bg-gradient-radial from-primary/40 via-accent/20 to-transparent" />
-              </div>
-              
-              {/* Logo Container */}
-              <div className="relative w-80 h-80 rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-accent/20 p-8 shadow-cosmic hover:shadow-glow transition-all duration-500 hover:scale-105 backdrop-blur-sm">
-                <img 
-                  src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
-                  alt="Mysttic Numbers Sacred Geometry"
-                  className="w-full h-full object-contain float"
-                />
-              </div>
-              
-              {/* Orbital rings around logo */}
-              <div className="absolute inset-0 rounded-full border border-primary/30" />
-              <div className="absolute inset-4 rounded-full border border-accent/20" />
             </div>
           </div>
         </div>
