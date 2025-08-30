@@ -41,8 +41,8 @@ export const HeroSection = () => {
           
           {/* Centered Content */}
           <div className="text-center max-w-4xl">
-            <h1 className="font-cosmic text-4xl md:text-6xl lg:text-7xl font-bold mb-8 text-foreground animate-fade-in leading-tight">
-              LLLUMINATE YOUR PATH WITH
+            <h1 className="font-cosmic text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 text-foreground animate-fade-in leading-tight">
+              <span className="whitespace-nowrap">LLLUMINATE YOUR PATH WITH</span>
               <br />
               <span className="text-primary">MYSTTIC FLAME</span>
               <span className="inline-block ml-3">
