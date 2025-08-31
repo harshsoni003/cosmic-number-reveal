@@ -24,12 +24,12 @@ export const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6">
-        <div className="flex flex-col items-center justify-center min-h-screen pt-10">
+        <div className="flex flex-col items-center justify-center min-h-screen pt-4 sm:pt-10">
           {/* Logo at top with glow effect */}
-          <div className="flex items-center justify-center mb-20">
+          <div className="flex items-center justify-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
             <div className="relative">
-              <div className="absolute inset-0 w-40 h-40 rounded-full bg-primary/30 blur-xl animate-pulse"></div>
-              <div className="relative w-40 h-40 rounded-full overflow-hidden bg-primary/10 p-3 shadow-glow border border-primary/20">
+              <div className="absolute inset-0 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full bg-primary/30 blur-xl animate-pulse"></div>
+              <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden bg-primary/10 p-2 sm:p-3 shadow-glow border border-primary/20">
                 <img 
                   src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
                   alt="Mysttic Numbers Logo"
@@ -41,26 +41,26 @@ export const HeroSection = () => {
           
           {/* Centered Content */}
           <div className="text-center max-w-5xl mx-auto">
-            <h1 className="font-cosmic text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 text-foreground animate-fade-in leading-tight text-center">
+            <h1 className="font-cosmic text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-6 sm:mb-8 text-foreground animate-fade-in leading-tight text-center">
               <div className="flex justify-center">
-                <span className="whitespace-nowrap">LLLUMINATE YOUR PATH WITH</span>
+                <span className="whitespace-nowrap text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">LLLUMINATE YOUR PATH WITH</span>
               </div>
               <br />
               <span className="text-primary">MYSTTIC FLAME</span>
-              <span className="inline-block ml-3">
-                <Sparkles className="w-8 h-8 md:w-12 md:h-12 text-primary animate-pulse" />
+              <span className="inline-block ml-2 sm:ml-3">
+                <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-pulse" />
               </span>
             </h1>
             
-            <p className="font-mystical text-lg md:text-xl lg:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
+            <p className="font-mystical text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 md:mb-12 leading-relaxed max-w-3xl mx-auto px-4">
               Experience the power of intuitive guidance and unlock your full potential
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button variant="hero" size="lg" className="px-10 py-4 text-lg font-semibold hover-scale">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
+              <Button variant="hero" size="lg" className="px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold hover-scale w-full sm:w-auto">
                 Get My Reading ✨
               </Button>
-              <Button variant="outline" size="lg" className="px-10 py-4 text-lg font-semibold hover-scale">
+              <Button variant="outline" size="lg" className="px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold hover-scale w-full sm:w-auto">
                 Learn More
               </Button>
             </div>
