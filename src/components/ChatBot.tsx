@@ -57,28 +57,28 @@ export const ChatBot = () => {
   return (
     <>
       {/* Chat Toggle Button */}
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 z-50">
         <Button
           onClick={() => setIsOpen(!isOpen)}
           variant="hero"
           size="lg"
-          className="rounded-full w-16 h-16 shadow-cosmic hover:shadow-glow"
+          className="rounded-full w-12 h-12 sm:w-16 sm:h-16 shadow-cosmic hover:shadow-glow"
         >
           {isOpen ? (
-            <X className="w-6 h-6" />
+            <X className="w-5 h-5 sm:w-6 sm:h-6" />
           ) : (
-            <MessageCircle className="w-6 h-6" />
+            <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
           )}
         </Button>
       </div>
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 w-96 h-[500px] bg-card-cosmic rounded-2xl shadow-cosmic border border-border z-40 overflow-hidden backdrop-blur-xl">
+        <div className="fixed bottom-16 sm:bottom-20 md:bottom-24 right-2 sm:right-4 md:right-6 w-[calc(100vw-16px)] sm:w-[calc(100vw-32px)] md:w-96 h-[400px] sm:h-[450px] md:h-[500px] bg-card-cosmic rounded-2xl shadow-cosmic border border-border z-40 overflow-hidden backdrop-blur-xl">
           {/* Professional Header */}
-          <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground p-4">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full overflow-hidden bg-background/20 p-1">
+          <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground p-3 sm:p-4">
+            <div className="flex items-center space-x-2 sm:space-x-3">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full overflow-hidden bg-background/20 p-1">
                 <img 
                   src="/lovable-uploads/3e79a7f6-4997-4841-9741-8f0f44c9b212.png" 
                   alt="Mysttic Numbers Logo"
@@ -86,7 +86,7 @@ export const ChatBot = () => {
                 />
               </div>
               <div>
-                <h3 className="font-cosmic font-semibold text-lg">Mysttic Numbers</h3>
+                <h3 className="font-cosmic font-semibold text-base sm:text-lg">Mysttic Numbers</h3>
                 <p className="font-mystical text-xs opacity-90">Professional Numerology Assistant</p>
               </div>
             </div>

@@ -23,25 +23,25 @@ export const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 relative cosmic-stars">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 relative cosmic-stars">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-cosmic text-4xl md:text-5xl font-bold mb-6 text-foreground">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="font-cosmic text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-foreground">
             What We Do?
           </h2>
-          <p className="font-mystical text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-mystical text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             Explore our mystical services designed to unlock your spiritual potential
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
             <div 
               key={index}
               className="bg-card-cosmic rounded-2xl overflow-hidden hover:scale-105 transition-all duration-500 hover:shadow-cosmic group"
             >
               {/* Service Image */}
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-48 sm:h-56 md:h-64 overflow-hidden">
                 <img 
                   src={service.image} 
                   alt={service.title}
@@ -50,20 +50,20 @@ export const ServicesSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 
                 {/* Service Title Overlay */}
-                <div className="absolute bottom-4 left-6 right-6">
-                  <h3 className="font-cosmic text-2xl font-bold text-primary mb-2">
+                <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-6 right-4 sm:right-6">
+                  <h3 className="font-cosmic text-lg sm:text-xl md:text-2xl font-bold text-primary mb-1 sm:mb-2">
                     {service.title}
                   </h3>
                 </div>
               </div>
               
               {/* Service Content */}
-              <div className="p-6">
-                <p className="font-mystical text-muted-foreground leading-relaxed mb-6 text-sm">
+              <div className="p-4 sm:p-6">
+                <p className="font-mystical text-muted-foreground leading-relaxed mb-4 sm:mb-6 text-sm">
                   {service.description}
                 </p>
                 
-                <Button variant="cosmic" className="w-full">
+                <Button variant="cosmic" className="w-full text-sm sm:text-base">
                   Learn More
                 </Button>
               </div>
@@ -72,15 +72,15 @@ export const ServicesSection = () => {
         </div>
         
         {/* Call to Action */}
-        <div className="text-center mt-16">
-          <div className="bg-card-cosmic rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="font-cosmic text-2xl font-semibold text-foreground mb-4">
+        <div className="text-center mt-12 sm:mt-16">
+          <div className="bg-card-cosmic rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto">
+            <h3 className="font-cosmic text-xl sm:text-2xl font-semibold text-foreground mb-3 sm:mb-4">
               Ready to Begin Your Spiritual Journey?
             </h3>
-            <p className="font-mystical text-muted-foreground mb-6">
+            <p className="font-mystical text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
               Book a consultation and discover which service resonates with your soul
             </p>
-            <Button variant="hero" size="lg">
+            <Button variant="hero" size="lg" className="text-sm sm:text-base">
               Book Consultation
             </Button>
           </div>
