@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MessageCircle, X, Phone, Mail, Clock, DollarSign, BookOpen, Sparkles } from "lucide-react";
+import { MessageCircle, X, Phone, Mail, Clock, DollarSign, BookOpen, Sparkles, Instagram, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface ChatMessage {
@@ -17,13 +17,13 @@ export const ChatBot = () => {
     {
       id: "contact",
       question: "Contact Information",
-      answer: "📞 Phone: +1 (555) 123-MYSTIC\n✉️ Email: hello@mystic-numbers.com\n🌟 Available Monday-Friday, 9 AM - 6 PM EST",
+      answer: "📞 Call or message on\n‪+91 8369981540‬\n‪+91 9004649055‬\n📧 mystticflame@gmail.com\n📱 Instagram: https://www.instagram.com/mystticflame/\n🕒 Available Any time in IST",
       icon: <Phone className="w-4 h-4" />
     },
     {
       id: "pricing",
       question: "Pricing & Packages",
-      answer: "✨ Basic Reading: $29 (Life Path Number)\n🌟 Complete Profile: $59 (All 3 Numbers)\n🔮 Premium Consultation: $99 (1-hour personal session)\n💫 All readings include detailed PDF report",
+      answer: "✨ First 15mins consultation free\n💰 Then charges (discuss within consultation)",
       icon: <DollarSign className="w-4 h-4" />
     },
     {
@@ -52,6 +52,20 @@ export const ChatBot = () => {
 
   const goBack = () => {
     setSelectedMessage(null);
+  };
+
+  const handleShare = () => {
+    const contactInfo = `📞 Call or message on\n‪+91 8369981540‬\n‪+91 9004649055‬\n📧 mystticflame@gmail.com\n📱 Instagram: https://www.instagram.com/mystticflame/\n🕒 Available Any time in IST`;
+    
+    if (navigator.share) {
+      navigator.share({
+        title: 'Mysttic Flame - Contact Information',
+        text: contactInfo,
+      });
+    } else {
+      navigator.clipboard.writeText(contactInfo);
+      alert('Contact information copied to clipboard!');
+    }
   };
 
   return (
@@ -129,7 +143,12 @@ export const ChatBot = () => {
                   <p className="font-mystical text-xs text-muted-foreground mb-3">
                     Professional numerology guidance available 24/7
                   </p>
-                  <Button variant="outline" size="sm" className="text-xs">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="text-xs"
+                    onClick={() => window.open('https://wa.me/918369981540', '_blank')}
+                  >
                     <Mail className="w-3 h-3 mr-2" />
                     Schedule Consultation
                   </Button>
@@ -161,11 +180,22 @@ export const ChatBot = () => {
                 </div>
                 
                 <div className="mt-5 flex gap-3">
-                  <Button variant="cosmic" size="sm" className="flex-1 text-xs">
+                  <Button 
+                    variant="cosmic" 
+                    size="sm" 
+                    className="flex-1 text-xs"
+                    onClick={() => window.open('https://wa.me/918369981540', '_blank')}
+                  >
                     <Mail className="w-3 h-3 mr-1" />
                     Get Personal Reading
                   </Button>
-                  <Button variant="outline" size="sm" className="text-xs">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="text-xs"
+                    onClick={handleShare}
+                  >
+                    <Share2 className="w-3 h-3 mr-1" />
                     Share
                   </Button>
                 </div>
