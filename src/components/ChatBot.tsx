@@ -43,6 +43,12 @@ export const ChatBot = () => {
       question: "Reading Accuracy",
       answer: "🎯 Our numerologists have 15+ years experience\n⭐ 98% customer satisfaction rate\n🔮 Ancient methods combined with modern insights\n💫 Thousands of life-changing readings delivered\n🌟 Money-back satisfaction guarantee",
       icon: <Sparkles className="w-4 h-4" />
+    },
+    {
+      id: "reviews",
+      question: "Reviews & Feedback",
+      answer: "⭐ See what our clients say about their transformative experiences\n📝 Share your own journey and help others discover their path\n🌟 Join thousands of satisfied customers\n💫 Your feedback helps us serve you better",
+      icon: <Instagram className="w-4 h-4" />
     }
   ];
 
@@ -180,15 +186,27 @@ export const ChatBot = () => {
                 </div>
                 
                 <div className="mt-5 flex gap-3">
-                  <Button 
-                    variant="cosmic" 
-                    size="sm" 
-                    className="flex-1 text-xs"
-                    onClick={() => window.open('https://wa.me/918369981540', '_blank')}
-                  >
-                    <Mail className="w-3 h-3 mr-1" />
-                    Get Personal Reading
-                  </Button>
+                  {selectedMessage.id === "reviews" ? (
+                    <Button 
+                      variant="cosmic" 
+                      size="sm" 
+                      className="flex-1 text-xs"
+                      onClick={() => window.open('https://www.google.co.in/search?si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E6uLVLCOZTV_OzuDqOzQJPcrLZYX3T6l1cRJ9aaBxdMrj57ze-QgEI10pK2mV52ladLbcEDiZcbLK-pQu2Yqc-KFELdo&q=Mysttic+Flame+Reviews', '_blank')}
+                    >
+                      <Sparkles className="w-3 h-3 mr-1" />
+                      View Reviews & Leave Feedback
+                    </Button>
+                  ) : (
+                    <Button 
+                      variant="cosmic" 
+                      size="sm" 
+                      className="flex-1 text-xs"
+                      onClick={() => window.open('https://wa.me/918369981540', '_blank')}
+                    >
+                      <Mail className="w-3 h-3 mr-1" />
+                      Get Personal Reading
+                    </Button>
+                  )}
                   <Button 
                     variant="outline" 
                     size="sm" 

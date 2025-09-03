@@ -42,17 +42,19 @@ export const HeroSection = () => {
           {/* Centered Content */}
           <div className="text-center max-w-5xl mx-auto">
             <h1 className="font-cosmic text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-6 sm:mb-8 text-foreground animate-fade-in leading-tight text-center">
-              <div className="flex justify-center">
+              <div className="flex justify-center mb-2 sm:mb-3 md:mb-4">
                 <span className="whitespace-nowrap text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">LLLUMINATE YOUR PATH WITH</span>
               </div>
-              <span className="text-primary">MYSTTIC FLAME</span>
-              <span className="inline-block ml-2 sm:ml-3">
-                <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-pulse" />
-              </span>
+              <div className="flex justify-center items-center">
+                <span className="text-primary">MYSTTIC FLAME</span>
+                <span className="inline-block ml-2 sm:ml-3">
+                  <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-pulse" />
+                </span>
+              </div>
             </h1>
             
             <p className="font-mystical text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 md:mb-12 leading-relaxed max-w-3xl mx-auto px-4">
-              Experience the power of intuitive guidance and unlock your full potential
+              Experience the power of intuitive guidance and unlock your full potential.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
@@ -68,7 +70,12 @@ export const HeroSection = () => {
                 variant="outline" 
                 size="lg" 
                 className="px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold hover-scale w-full sm:w-auto"
-                onClick={() => window.open('https://wa.me/918369981540', '_blank')}
+                onClick={() => {
+                  const element = document.getElementById('spiritual-journey');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 Learn More
               </Button>

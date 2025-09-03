@@ -22,23 +22,26 @@ export const Footer = () => {
               href="https://www.instagram.com/mystticflame/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-card rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-glow"
+              className="flex items-center justify-center w-12 h-12 bg-card rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-glow cursor-pointer relative z-10"
+              aria-label="Follow us on Instagram"
             >
-              <Instagram className="w-5 h-5" />
+              <Instagram className="w-5 h-5 pointer-events-none" />
             </a>
             <a 
               href="mailto:mystticflame@gmail.com" 
-              className="flex items-center justify-center w-12 h-12 bg-card rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-glow"
+              className="flex items-center justify-center w-12 h-12 bg-card rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-glow cursor-pointer relative z-10"
+              aria-label="Send us an email"
             >
-              <Mail className="w-5 h-5" />
+              <Mail className="w-5 h-5 pointer-events-none" />
             </a>
             <a 
               href="https://wa.me/918369981540" 
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center w-12 h-12 bg-card rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-glow"
+              className="flex items-center justify-center w-12 h-12 bg-card rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-glow cursor-pointer relative z-10"
+              aria-label="Contact us on WhatsApp"
             >
-              <Phone className="w-5 h-5" />
+              <Phone className="w-5 h-5 pointer-events-none" />
             </a>
           </div>
           

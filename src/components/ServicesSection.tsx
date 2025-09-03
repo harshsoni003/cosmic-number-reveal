@@ -76,7 +76,7 @@ export const ServicesSection = () => {
         </div>
         
         {/* Call to Action */}
-        <div className="text-center mt-12 sm:mt-16">
+        <div id="spiritual-journey" className="text-center mt-12 sm:mt-16">
           <div className="bg-card-cosmic rounded-2xl p-6 sm:p-8 max-w-2xl mx-auto">
             <h3 className="font-cosmic text-xl sm:text-2xl font-semibold text-foreground mb-3 sm:mb-4">
               Ready to Begin Your Spiritual Journey?

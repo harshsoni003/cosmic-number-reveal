@@ -213,4 +213,18 @@ All colors MUST be HSL. Cosmic theme with deep purples, midnight blues, and cosm
   .bg-gradient-radial {
     background: radial-gradient(circle, var(--tw-gradient-stops));
   }
+
+  /* Scroll Animation */
+  .animate-scroll-left {
+    animation: scroll-left 30s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
