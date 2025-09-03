@@ -107,7 +107,11 @@ export const InteractiveSection = () => {
                 </div>
                 
                 <div className="text-center mt-4 sm:mt-6">
-                  <Button variant="cosmic" className="text-sm sm:text-base">
+                  <Button 
+                    variant="cosmic" 
+                    className="text-sm sm:text-base"
+                    onClick={() => window.open('https://wa.me/918369981540', '_blank')}
+                  >
                     <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
                     Get Full Reading
                   </Button>

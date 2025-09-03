@@ -56,10 +56,20 @@ export const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center px-4">
-              <Button variant="hero" size="lg" className="px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold hover-scale w-full sm:w-auto">
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold hover-scale w-full sm:w-auto"
+                onClick={() => window.open('https://wa.me/918369981540', '_blank')}
+              >
                 Get My Reading ✨
               </Button>
-              <Button variant="outline" size="lg" className="px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold hover-scale w-full sm:w-auto">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="px-8 sm:px-10 py-3 sm:py-4 text-base sm:text-lg font-semibold hover-scale w-full sm:w-auto"
+                onClick={() => window.open('https://wa.me/918369981540', '_blank')}
+              >
                 Learn More
               </Button>
             </div>

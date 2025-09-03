@@ -65,7 +65,11 @@ export const FeaturesSection = () => {
               </p>
               
               <div className="text-center">
-                <Button variant="cosmic" className="w-full text-sm sm:text-base">
+                <Button 
+                  variant="cosmic" 
+                  className="w-full text-sm sm:text-base"
+                  onClick={() => window.open('https://wa.me/918369981540', '_blank')}
+                >
                   Discover Now
                 </Button>
               </div>

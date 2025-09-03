@@ -63,7 +63,11 @@ export const ServicesSection = () => {
                   {service.description}
                 </p>
                 
-                <Button variant="cosmic" className="w-full text-sm sm:text-base">
+                <Button 
+                  variant="cosmic" 
+                  className="w-full text-sm sm:text-base"
+                  onClick={() => window.open('https://wa.me/918369981540', '_blank')}
+                >
                   Learn More
                 </Button>
               </div>
@@ -80,7 +84,12 @@ export const ServicesSection = () => {
             <p className="font-mystical text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6">
               Book a consultation and discover which service resonates with your soul
             </p>
-            <Button variant="hero" size="lg" className="text-sm sm:text-base">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-sm sm:text-base"
+              onClick={() => window.open('https://wa.me/918369981540', '_blank')}
+            >
               Book Consultation
             </Button>
           </div>
