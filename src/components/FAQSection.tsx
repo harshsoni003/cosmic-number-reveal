@@ -102,20 +102,37 @@ export const FAQSection = () => {
             <p className="font-mystical text-muted-foreground mb-4">
               Our spiritual advisors are here to help guide your journey
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a 
-                href="mailto:hello@mystic-numbers.com"
-                className="font-mystical text-primary hover:text-accent transition-colors"
-              >
-                hello@mystic-numbers.com
-              </a>
-              <span className="hidden sm:inline text-muted-foreground">•</span>
-              <a 
-                href="tel:+15551234567"
-                className="font-mystical text-primary hover:text-accent transition-colors"
-              >
-                +1 (555) 123-MYSTIC
-              </a>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center text-sm">
+              <div className="font-mystical text-foreground">
+                📞 Call or message on
+              </div>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 items-center">
+                <a 
+                  href="https://wa.me/918369981540"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mystical text-primary hover:text-accent transition-colors"
+                >
+                  +91 8369981540
+                </a>
+                <span className="hidden sm:inline text-muted-foreground">•</span>
+                <a 
+                  href="https://wa.me/919004649055"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-mystical text-primary hover:text-accent transition-colors"
+                >
+                  +91 9004649055
+                </a>
+              </div>
+              <div className="mt-2">
+                <a 
+                  href="mailto:mystticflame@gmail.com"
+                  className="font-mystical text-primary hover:text-accent transition-colors"
+                >
+                  📧 mystticflame@gmail.com
+                </a>
+              </div>
             </div>
           </div>
         </div>

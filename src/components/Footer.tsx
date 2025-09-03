@@ -1,4 +1,4 @@
-import { Instagram, Youtube, Sparkles } from "lucide-react";
+import { Instagram, Mail, Phone, Sparkles } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -8,7 +8,7 @@ export const Footer = () => {
           <div className="flex items-center justify-center mb-6">
             <Sparkles className="w-8 h-8 text-primary mr-3" />
             <h3 className="font-cosmic text-2xl font-bold text-foreground">
-              Mysttic Numbers
+              Mysttic Flame
             </h3>
             <Sparkles className="w-8 h-8 text-primary ml-3" />
           </div>
@@ -19,21 +19,31 @@ export const Footer = () => {
           
           <div className="flex justify-center space-x-6 mb-8">
             <a 
-              href="#" 
+              href="https://www.instagram.com/mystticflame/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 bg-card rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-glow"
             >
               <Instagram className="w-5 h-5" />
             </a>
             <a 
-              href="#" 
+              href="mailto:mystticflame@gmail.com" 
               className="flex items-center justify-center w-12 h-12 bg-card rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-glow"
             >
-              <Youtube className="w-5 h-5" />
+              <Mail className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://wa.me/918369981540" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-12 h-12 bg-card rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110 hover:shadow-glow"
+            >
+              <Phone className="w-5 h-5" />
             </a>
           </div>
           
           <div className="font-mystical text-sm text-muted-foreground">
-            © 2025 Mysttic Numbers. All Rights Reserved.
+            © 2025 Mysttic Flame. All Rights Reserved.
           </div>
         </div>
       </div>
