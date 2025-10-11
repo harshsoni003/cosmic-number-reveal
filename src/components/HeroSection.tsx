@@ -15,7 +15,7 @@ export const HeroSection = () => {
       >
         <source src="https://res.cloudinary.com/dquljxbwp/video/upload/204926-925688162_yzhqhy.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-black/50" />
       
       {/* Floating Elements */}
       <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-primary rounded-full blur-sm opacity-80 float" style={{ animationDelay: '0s' }} />
@@ -41,19 +41,19 @@ export const HeroSection = () => {
           
           {/* Centered Content */}
           <div className="text-center max-w-5xl mx-auto">
-            <h1 className="font-cosmic text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-6 sm:mb-8 text-foreground animate-fade-in leading-tight text-center">
+            <h1 className="font-cosmic text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-6 sm:mb-8 text-white animate-fade-in leading-tight text-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
               <div className="flex justify-center mb-2 sm:mb-3 md:mb-4">
                 <span className="whitespace-nowrap text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">LLLUMINATE YOUR PATH WITH</span>
               </div>
               <div className="flex justify-center items-center">
-                <span className="text-primary">MYSTTIC FLAME</span>
+                <span className="text-primary drop-shadow-[0_0_20px_rgba(147,51,234,0.8)]">MYSTTIC FLAME</span>
                 <span className="inline-block ml-2 sm:ml-3">
-                  <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-pulse" />
+                  <Sparkles className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 text-primary animate-pulse drop-shadow-[0_0_10px_rgba(147,51,234,0.6)]" />
                 </span>
               </div>
             </h1>
             
-            <p className="font-mystical text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-10 md:mb-12 leading-relaxed max-w-3xl mx-auto px-4">
+            <p className="font-mystical text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-10 md:mb-12 leading-relaxed max-w-3xl mx-auto px-4 drop-shadow-[0_2px_6px_rgba(0,0,0,0.8)]">
               Experience the power of intuitive guidance and unlock your full potential.
             </p>
             
