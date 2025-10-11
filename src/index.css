@@ -9,10 +9,10 @@ All colors MUST be HSL. Cosmic theme with deep purples, midnight blues, and cosm
 @layer base {
   :root {
     /* Cosmic Color Palette */
-    --background: 240 25% 8%;  /* Deep space */
+    --background: 240 25% 15%;  /* Lighter deep space */
     --foreground: 47 84% 95%; /* Cosmic gold light */
 
-    --card: 249 35% 12%; /* Deep cosmic purple */
+    --card: 249 35% 18%; /* Lighter cosmic purple */
     --card-foreground: 47 84% 95%;
 
     --popover: 249 35% 12%;
@@ -24,7 +24,7 @@ All colors MUST be HSL. Cosmic theme with deep purples, midnight blues, and cosm
     --secondary: 257 45% 25%; /* Mystical purple */
     --secondary-foreground: 47 84% 95%;
 
-    --muted: 245 20% 18%;
+    --muted: 245 20% 25%;
     --muted-foreground: 245 15% 65%;
 
     --accent: 280 65% 55%; /* Magical purple */
