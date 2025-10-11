@@ -13,7 +13,7 @@ export const HeroSection = () => {
         loop
         playsInline
       >
-        <source src="https://res.cloudinary.com/dhea2aqxb/video/upload/1111_eu935d.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/dquljxbwp/video/upload/204926-925688162_yzhqhy.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-black/30" />
       
