@@ -43,7 +43,7 @@ export const HeroSection = () => {
           <div className="text-center max-w-5xl mx-auto">
             <h1 className="font-cosmic text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-6 sm:mb-8 text-white animate-fade-in leading-tight text-center drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
               <div className="flex justify-center mb-2 sm:mb-3 md:mb-4">
-                <span className="whitespace-nowrap text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">LLLUMINATE YOUR PATH WITH</span>
+                <span className="whitespace-nowrap text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">ILLUMINATE YOUR PATH WITH</span>
               </div>
               <div className="flex justify-center items-center">
                 <span className="text-primary drop-shadow-[0_0_20px_rgba(147,51,234,0.8)]">MYSTTIC FLAME</span>
